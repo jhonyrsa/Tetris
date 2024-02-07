@@ -5,6 +5,7 @@ import javax.swing.JFrame;
 public class JanelaJogo {
     //criação de variáveis do jogo;
     public static final int LARGURA = 480, ALTURA = 720;
+    private AreaDeJogo areadejogo;
     private JFrame janela;
 
     //Método construtor da classe JanelaJogo
@@ -17,6 +18,8 @@ public class JanelaJogo {
         janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         //Impede que o usuário redimensione a janela
         janela.setResizable(false);
+        
+        janela.add(areadejogo);
         //Altera a configuraçao do objeto janela para visível
         janela.setVisible(true);
     }
